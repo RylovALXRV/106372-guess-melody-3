@@ -3,6 +3,8 @@ import Enzyme, {shallow} from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import WelcomeScreen from "./welcome-screen";
 
+const ERRORS_COUNT = 3;
+
 Enzyme.configure({
   adapter: new Adapter(),
 });
@@ -12,7 +14,7 @@ it(`Should welcomeScreen button be pressed`, function () {
 
   const welcomeScreen = shallow(
       <WelcomeScreen
-        errorsCount={3}
+        errorsCount={ERRORS_COUNT}
         onWelcomeScreenButtonClick = {onWelcomeScreenButtonClick}
       />
   );
