@@ -7,7 +7,6 @@ class GenreQuestionScreen extends PureComponent {
     super(props);
 
     this.state = {
-      activePlayer: 0,
       answers: [false, false, false, false],
     };
   }
